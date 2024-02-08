@@ -6,7 +6,7 @@
             "id": "377f6c50-956d-4607-bb27-3d7240483779",
             "actions": [
                 {
-                    "name": "MouseLook",
+                    "name": "MouseMove",
                     "type": "Value",
                     "id": "92c09c0b-6a68-4e40-8d03-4b3df31dc47b",
                     "expectedControlType": "Vector2",
@@ -15,13 +15,40 @@
                     "initialStateCheck": true
                 },
                 {
-                    "name": "ControllerLook",
+                    "name": "ControllerMove",
                     "type": "Value",
                     "id": "57b22f27-2667-4faa-9eb8-c1736c7feaa0",
                     "expectedControlType": "Vector2",
                     "processors": "InvertVector2(invertX=false,invertY=false)",
                     "interactions": "",
                     "initialStateCheck": true
+                },
+                {
+                    "name": "Descend",
+                    "type": "Button",
+                    "id": "8769c263-d21b-4599-b216-41f088400e44",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Rotate",
+                    "type": "Button",
+                    "id": "fb01bfd4-e915-44af-bf9d-bea324928275",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Grab",
+                    "type": "Button",
+                    "id": "6065902d-93eb-48a5-ba22-f35dcd1d01a4",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 },
                 {
                     "name": "IngameMenu",
@@ -36,23 +63,12 @@
             "bindings": [
                 {
                     "name": "",
-                    "id": "3af7218e-c013-4736-ab13-ee4afff68aea",
-                    "path": "<Gamepad>/rightStick",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "ControllerLook",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "9f012d68-e6f6-459c-bb01-9d799be4c6df",
                     "path": "<Pointer>/delta",
                     "interactions": "",
-                    "processors": "ScaleVector2(x=15,y=15)",
+                    "processors": "",
                     "groups": "",
-                    "action": "MouseLook",
+                    "action": "MouseMove",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -75,6 +91,50 @@
                     "processors": "",
                     "groups": "",
                     "action": "IngameMenu",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "2e22c8e3-d2ef-4589-a589-ef87b2468a48",
+                    "path": "<Keyboard>/leftShift",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Descend",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "3af7218e-c013-4736-ab13-ee4afff68aea",
+                    "path": "<Gamepad>/rightStick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ControllerMove",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "73f86ebb-214f-4664-b645-d3dc1e74e23b",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Grab",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "5a3634e7-0ed7-4f5b-9f44-d5d8ca2f380d",
+                    "path": "<Mouse>/rightButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Rotate",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
