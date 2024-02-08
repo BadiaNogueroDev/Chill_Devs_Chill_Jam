@@ -20,7 +20,7 @@ MonoBehaviour:
     x: 422
     y: -190
     width: 943
-    height: 1811
+    height: 1812
 --- !u!114 &114350483966674976
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1078,7 +1078,7 @@ MonoBehaviour:
   zTestMode: 0
   useAlphaClipping: 0
   generateMotionVector: 0
-  excludeFromTAA: 0
+  excludeFromTUAndAA: 0
   sortingPriority: 0
   m_SubOutputs: []
   colorMapping: 0
@@ -1127,7 +1127,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: UnityEngine.Mesh, UnityEngine.CoreModule, Version=0.0.0.0,
           Culture=neutral, PublicKeyToken=null
-      m_SerializableObject: '{"obj":{"fileID":1475042043386675167,"guid":"899ca5d48444ef445a75b762bbd58458","type":3}}'
+      m_SerializableObject: '{"obj":{"fileID":1475042043386675167,"guid":"047f23932ff55e844992211beaff009b","type":3}}'
     m_Space: 2147483647
   m_Property:
     name: mesh
