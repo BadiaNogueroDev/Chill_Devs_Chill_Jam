@@ -5,7 +5,6 @@ using UnityEngine.InputSystem;
 
 public enum PlayerStates {
     MOVING,
-    DESCENDING,
     ROTATING,
 }
 
@@ -13,11 +12,8 @@ public class PlayerController : MonoBehaviour
 {
     public PlayerStates playerState;
 
-    private Animator animator;
     private Rigidbody rigidbody;
-
-    private bool holdingItem = false;
-    private bool descending = false;
+    private bool descending;
     private float angle = 0;
 
     [Header("Limitadors")]
@@ -31,13 +27,15 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float rotationSpeed;
     [SerializeField] private float verticalSpeed;
 
+    [Header("Rotacio")]
+    [SerializeField] private bool invertRotation;
+
     private void Awake()
     {
-        animator = GetComponent<Animator>();
         rigidbody = GetComponent<Rigidbody>();
     }
 
-    void Start()
+    private void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
         transform.position = new Vector3(0,limitVertical,0);
@@ -46,49 +44,24 @@ public class PlayerController : MonoBehaviour
     private void FixedUpdate()
     {
         float verticalForce = descending ? -1 : 1;
-        //float verticalForce = playerState == PlayerStates.DESCENDING ? -1 : 1;
         CheckLimit(limitVertical, transform.position.y, ref verticalForce);
         rigidbody.AddForce(new Vector3(0, verticalForce, 0) * verticalSpeed);
-    }
-
-    public void Grab(InputAction.CallbackContext callbackContext)
-    {
-        if (callbackContext.performed)
-        {
-            holdingItem = true;
-        }
-        else if (callbackContext.canceled)
-        {
-            holdingItem = false;
-        }
-
-        animator.SetBool("Grab", holdingItem);
     }
 
     public void Descend(InputAction.CallbackContext callbackContext)
     {
         if (callbackContext.performed)
-        {
-            //playerState = PlayerStates.DESCENDING;
             descending = true;
-        }
         else if (callbackContext.canceled)
-        {
-            //playerState = PlayerStates.MOVING;
             descending = false;
-        }
     }
 
     public void Rotate(InputAction.CallbackContext callbackContext)
     {
         if (callbackContext.performed)
-        {
             playerState = PlayerStates.ROTATING;
-        }
         else if (callbackContext.canceled)
-        {
             playerState = PlayerStates.MOVING;
-        }
     }
 
     public void MouseMove(InputAction.CallbackContext callbackContext)
@@ -101,12 +74,11 @@ public class PlayerController : MonoBehaviour
                 CheckLimit(limitForward, transform.position.z, ref mouseDelta.y);
                 rigidbody.AddForce(new Vector3(mouseDelta.x, 0, mouseDelta.y) * moveSpeed);
                 break;
-            case PlayerStates.DESCENDING:
-                break;
             case PlayerStates.ROTATING:
                 angle += mouseDelta.x * rotationSpeed;
                 angle = Mathf.Clamp(angle, -limitRotation, limitRotation);
-                transform.rotation = Quaternion.Euler(0, 0, angle);
+                if (!invertRotation) transform.rotation = Quaternion.Euler(0, 0, angle);
+                else transform.rotation = Quaternion.Euler(0, 0, -angle);
                 break;
         }
     }
