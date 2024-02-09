@@ -1,9 +1,8 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public enum PlayerStates {
+public enum PlayerStates 
+{
     MOVING,
     ROTATING,
 }
@@ -45,6 +44,7 @@ public class PlayerController : MonoBehaviour
     {
         float verticalForce = descending ? -1 : 1;
         CheckLimit(limitVertical, transform.position.y, ref verticalForce);
+        
         rigidbody.AddForce(new Vector3(0, verticalForce, 0) * verticalSpeed);
     }
 
@@ -67,18 +67,21 @@ public class PlayerController : MonoBehaviour
     public void MouseMove(InputAction.CallbackContext callbackContext)
     {
         Vector2 mouseDelta = callbackContext.ReadValue<Vector2>() * 0.05f;
+        
         switch (playerState)
         {
             case PlayerStates.MOVING:
                 CheckLimit(limitHorizontal, transform.position.x, ref mouseDelta.x);
                 CheckLimit(limitForward, transform.position.z, ref mouseDelta.y);
+                
                 rigidbody.AddForce(new Vector3(mouseDelta.x, 0, mouseDelta.y) * moveSpeed);
                 break;
+            
             case PlayerStates.ROTATING:
                 angle += mouseDelta.x * rotationSpeed;
                 angle = Mathf.Clamp(angle, -limitRotation, limitRotation);
-                if (!invertRotation) transform.rotation = Quaternion.Euler(0, 0, angle);
-                else transform.rotation = Quaternion.Euler(0, 0, -angle);
+                
+                transform.rotation = Quaternion.Euler(0, 0, angle * (invertRotation ? 1 : -1));
                 break;
         }
     }
