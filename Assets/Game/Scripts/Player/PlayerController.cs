@@ -37,7 +37,7 @@ public class PlayerController : MonoBehaviour
         rigidbody = GetComponent<Rigidbody>();
     }
 
-    void Start()
+    private void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
         transform.position = new Vector3(0,limitVertical,0);
