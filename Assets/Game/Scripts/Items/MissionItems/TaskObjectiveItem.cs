@@ -7,7 +7,6 @@ public class TaskObjectiveItem : MonoBehaviour
 
     public void OnTriggerEnter(Collider other)
     {
-        Debug.Log(other.tag);
         if (!other.CompareTag(Item.ITEM_TAG))
             return;
 

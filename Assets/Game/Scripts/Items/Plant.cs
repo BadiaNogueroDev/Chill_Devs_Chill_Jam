@@ -10,4 +10,5 @@ public class Plant : Item
     }
 
     public ItemFunction itemFunction;
+    public ItemType itemType => ItemType.PLANT;
 }

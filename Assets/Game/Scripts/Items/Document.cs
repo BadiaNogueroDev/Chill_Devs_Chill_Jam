@@ -11,4 +11,5 @@ public class Document : Item
     }
 
     public ItemFunction itemFunction;
+    public ItemType itemType => ItemType.DOCUMENT;
 }

@@ -10,4 +10,5 @@ public class Shredder : Item
     }
 
     public ItemFunction itemFunction;
+    public ItemType itemType => ItemType.SHREDDER;
 }

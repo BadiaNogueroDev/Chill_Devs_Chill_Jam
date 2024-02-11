@@ -10,4 +10,5 @@ public class Gong : Item
     }
 
     public ItemFunction itemFunction;
+    public ItemType itemType => ItemType.GONG;
 }

@@ -12,4 +12,5 @@ public class Separator : Item
     }
 
     public ItemFunction itemFunction;
+    public ItemType itemType => ItemType.SEPARATOR;
 }

@@ -15,6 +15,8 @@ public class PlayerController : MonoBehaviour
     private bool descending;
     private float angle = 0;
 
+    [SerializeField] private Vector3 StartingPosition;
+
     [Header("Limitadors")]
     [SerializeField] private float limitHorizontal;
     [SerializeField] private float limitVertical;
@@ -39,7 +41,7 @@ public class PlayerController : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
         //transform.position = new Vector3(0,limitVertical,-limitForward);
-        transform.position = new Vector3(0,limitVertical,0);
+        transform.position = StartingPosition;
     }
 
     private void FixedUpdate()

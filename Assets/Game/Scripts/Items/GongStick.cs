@@ -4,5 +4,5 @@ using UnityEngine;
 
 public class GongStick : Item
 {
-    
+    public ItemType itemType => ItemType.GONG_STICK;
 }

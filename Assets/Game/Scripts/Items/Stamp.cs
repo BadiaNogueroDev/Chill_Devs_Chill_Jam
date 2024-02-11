@@ -12,4 +12,5 @@ public class Stamp : Item
     }
 
     public ItemFunction itemFunction;
+    public ItemType itemType => ItemType.STAMP;
 }

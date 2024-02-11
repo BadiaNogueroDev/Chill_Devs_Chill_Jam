@@ -64,7 +64,7 @@ Material:
     - _QueueControl: 0
     - _QueueOffset: 0
     - _ReceiveShadows: 1
-    - _ScrollSpeed: 0.05
+    - _ScrollSpeed: 0.1
     - _SrcBlend: 5
     - _Surface: 1
     - _WorkflowMode: 1
@@ -73,6 +73,6 @@ Material:
     - _ZWriteControl: 0
     m_Colors:
     - _FresnelColor: {r: 0.28531134, g: 4.232118, b: 0, a: 1}
-    - _HologramTiling: {r: 1, g: 4, b: 0, a: 0}
+    - _HologramTiling: {r: 1, g: 2, b: 0, a: 0}
     - _MainColor: {r: 0, g: 0.49324083, b: 1, a: 0.07058824}
   m_BuildTextureStacks: []

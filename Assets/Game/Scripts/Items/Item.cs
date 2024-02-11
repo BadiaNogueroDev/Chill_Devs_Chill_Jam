@@ -10,7 +10,7 @@ public class Item : MonoBehaviour
     
     public enum ItemType
     {
-        DISK, //Misiones 1 y 2
+        CARTRIDGE, //Misiones 1 y 2
         DOCUMENT, //Destruir y estampar
         STAMP, //Cuadrado, redonda, triangulo
         SEPARATOR, //Tres secciones para cada stamp
@@ -22,7 +22,7 @@ public class Item : MonoBehaviour
         PROP
     }
 
-    public ItemType itemType;
+    public ItemType itemType { get; private set; }
 
     [SerializeField] protected bool grabbable;
     [SerializeField] protected bool recoverable;
@@ -48,7 +48,8 @@ public class Item : MonoBehaviour
         
         itemRigidbody.isKinematic = true;
         transform.SetParent(grabberTransform);
-        gameObject.layer = 6;
+        
+        gameObject.layer = 11;
         return this;
     }
 
@@ -63,6 +64,9 @@ public class Item : MonoBehaviour
 
     public virtual void RespawnItem(Transform respawnTransform)
     {
+        if (!recoverable)
+            return;
+        
         transform.position = respawnTransform.position;
         transform.rotation = respawnTransform.rotation;
     }

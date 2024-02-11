@@ -11,6 +11,7 @@ public class Cartridge : Item
     }
 
     public ItemFunction itemFunction;
+    public ItemType itemType => ItemType.CARTRIDGE;
 
     public override void InteractedWithTaskObjective()
     {
