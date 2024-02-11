@@ -6,10 +6,14 @@ using UnityEngine.Serialization;
 public class StampablePaper : TaskObjectiveItem
 {
     public Stamp.ItemFunction StampType;
-    
-    public virtual void InteractWithItem(Item itemTouched)
+    private bool stamped = false;
+
+    public override void InteractWithItem(Item itemTouched)
     {
-        if (((Stamp)itemTouched).itemFunction != StampType)
+        if (stamped)
             return;
+        
+        stamped = true;
+        base.InteractWithItem(itemTouched);
     }
 }

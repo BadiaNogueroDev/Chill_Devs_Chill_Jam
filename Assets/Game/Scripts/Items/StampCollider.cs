@@ -15,15 +15,17 @@ public class StampCollider : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log(other.name);
         if (!other.TryGetComponent(out StampablePaper stampablePaper) || stampablePaper.StampType != stamp.itemFunction)
             return;
-
+        
+        stampablePaper.InteractWithItem(stamp);
+        /*
         if (Physics.Raycast(transform.position, Vector3.down, 2f, 1))
         {
             
         }
         
         Instantiate(stampPrefab,transform.position, other.transform.rotation);
+        */
     }
 }

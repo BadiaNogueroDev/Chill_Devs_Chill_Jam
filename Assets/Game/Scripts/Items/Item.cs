@@ -49,7 +49,7 @@ public class Item : MonoBehaviour
         itemRigidbody.isKinematic = true;
         transform.SetParent(grabberTransform);
         
-        gameObject.layer = 11;
+        gameObject.layer = 6;
         return this;
     }
 
@@ -75,9 +75,9 @@ public class Item : MonoBehaviour
     {
         itemRigidbody.isKinematic = false;
         transform.SetParent(null);
-        
         gameObject.layer = initialLayer;
         
+        TaskManager.Instance.TaksObjectiveDone(itemType);
         PlayerGrabController.Instance.RemoveHeldItem(this);
     }
 }

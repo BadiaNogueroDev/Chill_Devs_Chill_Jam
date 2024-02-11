@@ -46,6 +46,17 @@ public class TaskManager : MonoBehaviour
             currentTasksList.Add(new Task(taskData, taskInfoUI));
         }
     }
+
+    public void TaksObjectiveDone(Item.ItemType taskType)
+    {
+        foreach (var task in currentTasksList)
+        {
+            if (task.taskType != taskType)
+                return;
+
+            task.ObjectiveDone();
+        }
+    }
 }
 
 [Serializable]

@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: 00_StampDocuments
   m_EditorClassIdentifier: 
   TaskDescription: Stamp Documents
-  AmountToComplete: 1
+  AmountToComplete: 3
   ObjectiveItemType: 2

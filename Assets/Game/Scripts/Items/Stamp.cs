@@ -13,4 +13,21 @@ public class Stamp : Item
 
     public ItemFunction itemFunction;
     public ItemType itemType => ItemType.STAMP;
+    
+    public override Item GrabItem(Transform grabberTransform)
+    {
+        if (!grabbable)
+            return null;
+        
+        itemRigidbody.isKinematic = true;
+        transform.SetParent(grabberTransform);
+        
+        gameObject.layer = 11;
+        return this;
+    }
+    
+    public override void InteractedWithTaskObjective()
+    {
+        TaskManager.Instance.TaksObjectiveDone(itemType);
+    }
 }
