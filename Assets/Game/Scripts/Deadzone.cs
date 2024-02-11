@@ -8,10 +8,9 @@ public class Deadzone : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Item") && other.gameObject.GetComponent<Item>().recoverable)
+        if (other.transform.TryGetComponent(out Item fallenItem))
         {
-            other.gameObject.transform.position = spawner.transform.position;
-            other.gameObject.transform.rotation = spawner.transform.rotation;
+            fallenItem.RespawnItem(spawner);
         }
     }
 }

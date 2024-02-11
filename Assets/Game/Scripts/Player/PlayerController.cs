@@ -37,6 +37,8 @@ public class PlayerController : MonoBehaviour
     private void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+        //transform.position = new Vector3(0,limitVertical,-limitForward);
         transform.position = new Vector3(0,limitVertical,0);
     }
 

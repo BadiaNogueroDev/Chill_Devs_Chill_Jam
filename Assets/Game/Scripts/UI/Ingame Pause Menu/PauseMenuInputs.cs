@@ -18,7 +18,7 @@ public class PauseMenuInputs : MonoBehaviour
         playerInput.actions.FindActionMap("UI").Disable();
     }
 
-    void OnIngameMenu()
+    public void OnIngameMenu()
     {
         if(pauseMenu.IsPaused)
             pauseMenu.Continue();
@@ -26,7 +26,7 @@ public class PauseMenuInputs : MonoBehaviour
             pauseMenu.PauseGame();
     }
     
-    void OnDismiss()
+    public void OnDismiss()
     {
         pauseMenu.Continue();
     }

@@ -1,43 +1,55 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.Serialization;
 
 public class TaskManager : MonoBehaviour
 {
-    private List<GameObject> taskInfoList = new List<GameObject>();
-    [SerializeField] List<Task> firstDiskTasks = new List<Task>();
-    [SerializeField] List<Task> secondDiskTasks = new List<Task>();
-    [SerializeField] private GameObject taskInfo;
+    public static TaskManager Instance;
+    
+    [SerializeField] private TaskInfoUI taskInfoUIPrefab;
+    
+    private List<Task> currentTasksList = new List<Task>();
+    [SerializeField] private List<TasksList> taskLists = new List<TasksList>();
 
-    public void NextTasks(List<Task> tasks)
+    public int CurrentTasksIndex = 0;
+    [SerializeField] private Transform displayTransform;
+
+    public bool AllTasksDone => currentTasksList.All(x => x.TaskCompleted);
+    
+    private void Awake()
     {
-        for (int i = 0; i < taskInfoList.Count; i++)
-        {
-            Destroy(taskInfoList[i]);
-        }
-
-        taskInfoList.Clear();
-
-        for (int i = 0; i < tasks.Count; i++)
-        {
-            GameObject newTask = Instantiate(taskInfo, transform);
-            newTask.GetComponentInChildren<TMP_Text>().text = tasks[i].TaskDescription;
-            newTask.GetComponentInChildren<Toggle>().isOn = tasks[i].TaskCompleted;
-            taskInfoList.Add(newTask);
-        }
+        Instance = this;
     }
 
-    private void OnTriggerEnter(Collider other)
+    public void NextTasks()
     {
-        if (other.gameObject.CompareTag("Item"))
+        if (!AllTasksDone)
+            return;
+        
+        foreach (var task in currentTasksList)
         {
-            if (other.gameObject.GetComponent<Item>().itemType == Item.ItemType.DISK)
-            {
-                if (other.gameObject.GetComponent<Disk>().itemFunction == Disk.ItemFunction.PART_1) NextTasks(firstDiskTasks);
-                else NextTasks(secondDiskTasks);
-            }
+            task.RemoveTaskFromList();
+        }
+        
+        currentTasksList.Clear();
+
+        foreach (var taskData in taskLists[CurrentTasksIndex].taskList)
+        {
+            TaskInfoUI taskInfoUI = Instantiate(taskInfoUIPrefab, displayTransform);
+            taskInfoUI.SetDescription(taskData.TaskDescription);
+            taskInfoUI.SetCheckmark(false);
+            currentTasksList.Add(new Task(taskData, taskInfoUI));
         }
     }
+}
+
+[Serializable]
+public class TasksList
+{
+    public List<TaskData> taskList = new List<TaskData>();
 }

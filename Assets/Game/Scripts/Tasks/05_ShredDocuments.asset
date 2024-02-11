@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6efe985a631065a4da1a480ddd65e56e, type: 3}
   m_Name: 05_ShredDocuments
   m_EditorClassIdentifier: 
-  taskDescription: si
-  taskStarted: 0
-  taskCompleted: 0
+  TaskDescription: Shred Documents
+  AmountToComplete: 1
+  ObjectiveItemType: 4

@@ -87,7 +87,7 @@ GameObject:
   - component: {fileID: 8250343092773179801}
   - component: {fileID: 6081495879037593052}
   m_Layer: 0
-  m_Name: TaskInfo
+  m_Name: Description
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -296,7 +296,7 @@ GameObject:
   - component: {fileID: 935035226574719635}
   - component: {fileID: 9094654103317174224}
   m_Layer: 0
-  m_Name: Toggle
+  m_Name: Checkmark
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -341,7 +341,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 0
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -361,7 +361,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 1079854503797516888}
   toggleTransition: 1
   graphic: {fileID: 7000436133322342458}
@@ -381,6 +381,8 @@ GameObject:
   - component: {fileID: 2460396305832015872}
   - component: {fileID: 6798357855258853927}
   - component: {fileID: 3473513619702453445}
+  - component: {fileID: 7814522963903534935}
+  - component: {fileID: 6376675909710549095}
   m_Layer: 0
   m_Name: TaskInfo
   m_TagString: Untagged
@@ -447,3 +449,37 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &7814522963903534935
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8670611470076275668}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77ba9fe5af22ba743a07b7694531fb65, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  checkmarkToggle: {fileID: 9094654103317174224}
+  descriptionText: {fileID: 6081495879037593052}
+--- !u!114 &6376675909710549095
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8670611470076275668}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 306cc8c2b49d7114eaa3623786fc2126, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreLayout: 0
+  m_MinWidth: 6
+  m_MinHeight: 0.5
+  m_PreferredWidth: 6
+  m_PreferredHeight: 2
+  m_FlexibleWidth: -1
+  m_FlexibleHeight: -1
+  m_LayoutPriority: 1

@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6efe985a631065a4da1a480ddd65e56e, type: 3}
   m_Name: 06_WaterPlant
   m_EditorClassIdentifier: 
-  taskTitle: 
-  taskDescription: 
-  taskCompleted: 0
+  TaskDescription: Water Plant
+  AmountToComplete: 1
+  ObjectiveItemType: 5

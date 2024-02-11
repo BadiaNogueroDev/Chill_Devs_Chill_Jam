@@ -16,8 +16,13 @@ public class PropSoundOnCollision : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        Debug.Log(propRigidbody.velocity.magnitude);
+        //Debug.Log(propRigidbody.velocity.magnitude);
         if (propRigidbody.velocity.magnitude >= minSpeedToSound)
+        {
+            impactSound.Play();
+            return;
+        }
+        else if (collision.gameObject.TryGetComponent(out Rigidbody colliderRigidbody) && colliderRigidbody.velocity.magnitude >= minSpeedToSound)
         {
             impactSound.Play();
         }
