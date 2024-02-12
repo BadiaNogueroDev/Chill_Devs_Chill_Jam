@@ -12,6 +12,8 @@ public class Shredder : TaskObjectiveItem
     public override void InteractWithItem(Item itemTouched)
     {
         itemTouched.itemRigidbody.isKinematic = true;
+        itemTouched.TryGetComponent(out Collider col);
+        col.enabled = false;
         itemTouched.transform.position = paperInitialPosition.position;
         itemTouched.transform.rotation = paperInitialPosition.rotation;
         StartCoroutine(Shred(itemTouched.gameObject));

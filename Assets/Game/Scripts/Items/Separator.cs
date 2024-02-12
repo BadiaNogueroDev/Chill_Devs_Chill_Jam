@@ -10,12 +10,11 @@ public class Separator : TaskObjectiveItem
 
     public override void InteractWithItem(Item itemTouched)
     {
-        Debug.Log("Interaction with document");
         if (itemTouched.TryGetComponent(out StampablePaper document) && document.StampType == typeOfStampRequired && document.stamped)
         {
-            Debug.Log("Correct document");
             itemTouched.transform.position = paperPosition.position;
             itemTouched.transform.rotation = paperPosition.rotation;
+            itemTouched.itemRigidbody.constraints = RigidbodyConstraints.FreezeAll;
             TaskManager.Instance.TaksObjectiveDone(itemType);
         }
     }
