@@ -11,17 +11,17 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: dda084a3f7791254ab5d4f98b9d4d16f,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 7.7263985
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: dda084a3f7791254ab5d4f98b9d4d16f,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 7.7264
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: dda084a3f7791254ab5d4f98b9d4d16f,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 7.7263985
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: dda084a3f7791254ab5d4f98b9d4d16f,
         type: 3}
@@ -75,6 +75,21 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -5477749408508380018, guid: dda084a3f7791254ab5d4f98b9d4d16f,
         type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -5477749408508380018, guid: dda084a3f7791254ab5d4f98b9d4d16f,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -5477749408508380018, guid: dda084a3f7791254ab5d4f98b9d4d16f,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -5477749408508380018, guid: dda084a3f7791254ab5d4f98b9d4d16f,
+        type: 3}
       propertyPath: m_LocalRotation.w
       value: 0
       objectReference: {fileID: 0}
@@ -113,6 +128,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: Papel_StampCuadrado
       objectReference: {fileID: 0}
+    - target: {fileID: 5334037119324981776, guid: dda084a3f7791254ab5d4f98b9d4d16f,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: -5495902117074765545, guid: 6fbe675c31319f147a7ce918277d36e9,
+        type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 65702495048144492, guid: dda084a3f7791254ab5d4f98b9d4d16f, type: 3}
@@ -204,6 +225,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemToInteractWith: 2
   StampType: 0
+  stamped: 0
 --- !u!114 &4679878583673250063
 MonoBehaviour:
   m_ObjectHideFlags: 0
