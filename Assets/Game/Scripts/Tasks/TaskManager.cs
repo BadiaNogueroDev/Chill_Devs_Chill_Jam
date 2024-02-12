@@ -10,23 +10,37 @@ using UnityEngine.Serialization;
 public class TaskManager : MonoBehaviour
 {
     public static TaskManager Instance;
-    
+
+    [SerializeField] private float cartridgeSpawnWait = 5f;
+
     [SerializeField] private TaskInfoUI taskInfoUIPrefab;
     
     private List<Task> currentTasksList = new List<Task>();
     [SerializeField] private List<TasksList> taskLists = new List<TasksList>();
 
     public int CurrentTasksIndex = 0;
+    public Transform itemSpawner;
     [SerializeField] private Transform displayTransform;
-    [SerializeField] private Transform itemSpawner;
-
-    [SerializeField]private List<GameObject> requiredTaskItems = new List<GameObject>();
+    [SerializeField] private GameObject firstCartridge;
+    [SerializeField] private GameObject secondCartridge;
+    [SerializeField] private List<GameObject> requiredTaskItems = new List<GameObject>();
 
     public bool AllTasksDone => currentTasksList.All(x => x.TaskCompleted);
 
     private void Awake()
     {
         Instance = this;
+    }
+
+    private void Start()
+    {
+        StartCoroutine(SpawnCartridge(firstCartridge));
+    }
+
+    public IEnumerator SpawnCartridge(GameObject item)
+    {
+        yield return new WaitForSeconds(cartridgeSpawnWait);
+        Instantiate(item, itemSpawner.position, itemSpawner.rotation);
     }
 
     public void NextTasks()
@@ -40,6 +54,8 @@ public class TaskManager : MonoBehaviour
         }
         
         currentTasksList.Clear();
+
+        StartCoroutine(SpawnCartridge(secondCartridge));
 
         foreach (var taskData in taskLists[CurrentTasksIndex].taskList)
         {

@@ -150,6 +150,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36f84760e499ad047b712976a580fffb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  itemType: 2
   grabbable: 1
   recoverable: 1
   itemRigidbody: {fileID: 0}

@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 
 public class TaskObjectiveItem : MonoBehaviour
@@ -9,7 +8,7 @@ public class TaskObjectiveItem : MonoBehaviour
     {
         if (!other.CompareTag(Item.ITEM_TAG))
             return;
-
+                
         if (other.TryGetComponent(out Item itemTouched) && itemTouched.itemType == itemToInteractWith)
         {
             InteractWithItem(itemTouched);

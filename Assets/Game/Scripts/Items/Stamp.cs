@@ -12,8 +12,12 @@ public class Stamp : Item
     }
 
     public ItemFunction itemFunction;
-    public ItemType itemType => ItemType.STAMP;
-    
+
+    private void Awake()
+    {
+        itemType = ItemType.STAMP;
+    }
+
     public override Item GrabItem(Transform grabberTransform)
     {
         if (!grabbable)

@@ -9,13 +9,16 @@ public class Cartridge : Item
         PART_1,
         PART_2
     }
-
     public ItemFunction itemFunction;
-    public ItemType itemType => ItemType.CARTRIDGE;
+
+    private void Awake()
+    {
+        itemType = ItemType.CARTRIDGE;
+    }
 
     public override void InteractedWithTaskObjective()
     {
-        base.InteractedWithTaskObjective();
+        //base.InteractedWithTaskObjective();
         
         switch (itemFunction)
         {

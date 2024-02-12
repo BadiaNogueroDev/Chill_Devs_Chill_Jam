@@ -17,12 +17,10 @@ public class Item : MonoBehaviour
         SHREDDER, //Interaccion solo con hojas
         PLANT, //Interaccion solo con la regadera
         WATER_CAN, //Interaccion solo con la planta
-        GONG, //Interaccion solo con el palo
-        GONG_STICK, //Interaccion solo con el gong
         PROP
     }
 
-    public ItemType itemType { get; private set; }
+    public ItemType itemType;
 
     [SerializeField] protected bool grabbable;
     [SerializeField] protected bool recoverable;
@@ -32,13 +30,15 @@ public class Item : MonoBehaviour
 
     private void Awake()
     {
-        itemRigidbody = GetComponent<Rigidbody>();
+        //itemRigidbody = GetComponent<Rigidbody>();
     }
 
     private void Start()
     {
         gameObject.tag = ITEM_TAG;
         initialLayer = gameObject.layer;
+        //Mogut de Awake a Start perque en el Awake no es fa la asignacio del rb a la variable
+        itemRigidbody = GetComponent<Rigidbody>();
     }
 
     public virtual Item GrabItem(Transform grabberTransform)
@@ -66,7 +66,8 @@ public class Item : MonoBehaviour
     {
         if (!recoverable)
             return;
-        
+
+        itemRigidbody.isKinematic = false;
         transform.position = respawnTransform.position;
         transform.rotation = respawnTransform.rotation;
     }

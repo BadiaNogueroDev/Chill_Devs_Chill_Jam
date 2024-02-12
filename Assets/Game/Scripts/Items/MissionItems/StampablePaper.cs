@@ -6,7 +6,7 @@ using UnityEngine.Serialization;
 public class StampablePaper : TaskObjectiveItem
 {
     public Stamp.ItemFunction StampType;
-    private bool stamped = false;
+    public bool stamped = false;
 
     public override void InteractWithItem(Item itemTouched)
     {

@@ -4,5 +4,8 @@ using UnityEngine;
 
 public class NoTaskItem : Item
 {
-    public ItemType itemType => ItemType.PROP;
+    private void Awake()
+    {
+        itemType = ItemType.PROP;
+    }
 }
