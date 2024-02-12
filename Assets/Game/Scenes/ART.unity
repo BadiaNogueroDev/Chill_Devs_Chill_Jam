@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.30692244, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1490,7 +1490,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 629584118}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.30697367, y: -1.257983e-15, z: -4.6472775e-16, w: 0.95171803}
+  m_LocalRotation: {x: 0.30697364, y: 0.000000040111914, z: -0.00000001293797, w: 0.95171803}
   m_LocalPosition: {x: 0, y: 9, z: -7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2529,7 +2529,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1513030236}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.30697367, y: -1.257983e-15, z: -4.6472775e-16, w: 0.95171803}
+  m_LocalRotation: {x: 0.30697364, y: 0.000000040111914, z: -0.00000001293797, w: 0.95171803}
   m_LocalPosition: {x: 0, y: 9, z: -7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -3764,6 +3764,74 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7fe8c4485aa18ff40a8a2045c430562e, type: 3}
+--- !u!1001 &6605131794777294301
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7246257352114117917, guid: 3a81565a08031114db05373258a1f96b,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -6.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 7246257352114117917, guid: 3a81565a08031114db05373258a1f96b,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.74
+      objectReference: {fileID: 0}
+    - target: {fileID: 7246257352114117917, guid: 3a81565a08031114db05373258a1f96b,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 13.85
+      objectReference: {fileID: 0}
+    - target: {fileID: 7246257352114117917, guid: 3a81565a08031114db05373258a1f96b,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071067
+      objectReference: {fileID: 0}
+    - target: {fileID: 7246257352114117917, guid: 3a81565a08031114db05373258a1f96b,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 7246257352114117917, guid: 3a81565a08031114db05373258a1f96b,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7246257352114117917, guid: 3a81565a08031114db05373258a1f96b,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7246257352114117917, guid: 3a81565a08031114db05373258a1f96b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7246257352114117917, guid: 3a81565a08031114db05373258a1f96b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7246257352114117917, guid: 3a81565a08031114db05373258a1f96b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8053614843579811751, guid: 3a81565a08031114db05373258a1f96b,
+        type: 3}
+      propertyPath: m_Name
+      value: cuadro foto
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3a81565a08031114db05373258a1f96b, type: 3}
 --- !u!1001 &8714302242495125713
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3940,3 +4008,4 @@ SceneRoots:
   - {fileID: 1794568260}
   - {fileID: 286342262}
   - {fileID: 8734173308652879609}
+  - {fileID: 6605131794777294301}
