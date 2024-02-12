@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.30692244, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -228,21 +228,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Center.z
       value: -0.22607213
-      objectReference: {fileID: 0}
-    - target: {fileID: 7918175954278782044, guid: 307bcb7440bc7084991d0538702b1620,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 7918175954278782044, guid: 307bcb7440bc7084991d0538702b1620,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 7918175954278782044, guid: 307bcb7440bc7084991d0538702b1620,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1.3
       objectReference: {fileID: 0}
     - target: {fileID: 7918175954278782044, guid: 307bcb7440bc7084991d0538702b1620,
         type: 3}
@@ -1108,21 +1093,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Center.z
       value: -0.22607213
-      objectReference: {fileID: 0}
-    - target: {fileID: 4698631988366375368, guid: 005f6d398a5509b4995555a9119494d5,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4698631988366375368, guid: 005f6d398a5509b4995555a9119494d5,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4698631988366375368, guid: 005f6d398a5509b4995555a9119494d5,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1.3
       objectReference: {fileID: 0}
     - target: {fileID: 4698631988366375368, guid: 005f6d398a5509b4995555a9119494d5,
         type: 3}
@@ -2898,21 +2868,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4251080653221004558, guid: e16f77fd67971f84d861664cb0452b26,
         type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4251080653221004558, guid: e16f77fd67971f84d861664cb0452b26,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4251080653221004558, guid: e16f77fd67971f84d861664cb0452b26,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4251080653221004558, guid: e16f77fd67971f84d861664cb0452b26,
-        type: 3}
       propertyPath: m_LocalPosition.x
       value: 19.63
       objectReference: {fileID: 0}
@@ -3034,21 +2989,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Papel_Destroy
-      objectReference: {fileID: 0}
-    - target: {fileID: 902669918227106617, guid: f4601911ef39ae04e98bd433721934f5,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 902669918227106617, guid: f4601911ef39ae04e98bd433721934f5,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 902669918227106617, guid: f4601911ef39ae04e98bd433721934f5,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1.3
       objectReference: {fileID: 0}
     - target: {fileID: 902669918227106617, guid: f4601911ef39ae04e98bd433721934f5,
         type: 3}
@@ -3544,6 +3484,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: tubo_UVS_el de verdad mi reina
+      objectReference: {fileID: 0}
+    - target: {fileID: 7760972884699624489, guid: 053a204333aa80442b98dfdf468c7329,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7760972884699624489, guid: 053a204333aa80442b98dfdf468c7329,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7760972884699624489, guid: 053a204333aa80442b98dfdf468c7329,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7760972884699624489, guid: 053a204333aa80442b98dfdf468c7329,
         type: 3}

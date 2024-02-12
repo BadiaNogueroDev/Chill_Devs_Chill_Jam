@@ -27,7 +27,7 @@ MonoBehaviour:
     m_Value: 0
   saturation:
     m_OverrideState: 1
-    m_Value: 30
+    m_Value: 70
 --- !u!114 &-1735364169233557021
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -49,10 +49,10 @@ MonoBehaviour:
     m_Value: {x: 0.5, y: 0.5}
   intensity:
     m_OverrideState: 1
-    m_Value: 0.25
+    m_Value: 0.15
   smoothness:
     m_OverrideState: 1
-    m_Value: 0.4
+    m_Value: 0.3
   rounded:
     m_OverrideState: 0
     m_Value: 0
@@ -104,13 +104,13 @@ MonoBehaviour:
     m_Value: 0
   focusDistance:
     m_OverrideState: 1
-    m_Value: 1.5
+    m_Value: 5.99
   aperture:
     m_OverrideState: 1
-    m_Value: 5.6
+    m_Value: 1.9
   focalLength:
     m_OverrideState: 1
-    m_Value: 50
+    m_Value: 86
   bladeCount:
     m_OverrideState: 1
     m_Value: 5
