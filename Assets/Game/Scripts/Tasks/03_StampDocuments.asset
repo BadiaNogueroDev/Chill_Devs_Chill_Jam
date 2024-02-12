@@ -15,3 +15,9 @@ MonoBehaviour:
   TaskDescription: Stamp Documents
   AmountToComplete: 3
   ObjectiveItemType: 2
+  requiredItem:
+  - {fileID: 5368066776475968370, guid: 005f6d398a5509b4995555a9119494d5, type: 3}
+  - {fileID: 5368066776475968370, guid: 005f6d398a5509b4995555a9119494d5, type: 3}
+  - {fileID: 7397395206949293798, guid: 307bcb7440bc7084991d0538702b1620, type: 3}
+  - {fileID: 3581786637215358900, guid: e16f77fd67971f84d861664cb0452b26, type: 3}
+  - {fileID: 3581786637215358900, guid: e16f77fd67971f84d861664cb0452b26, type: 3}

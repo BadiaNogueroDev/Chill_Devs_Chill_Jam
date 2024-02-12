@@ -26,17 +26,17 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: bab29bffb3365d948be85f5d875e4e49,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 12.406872
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: bab29bffb3365d948be85f5d875e4e49,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.9
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: bab29bffb3365d948be85f5d875e4e49,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 8.391096
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: bab29bffb3365d948be85f5d875e4e49,
         type: 3}
@@ -150,9 +150,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36f84760e499ad047b712976a580fffb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemType: 2
   grabbable: 1
   recoverable: 1
+  itemRigidbody: {fileID: 0}
   itemFunction: 0
 --- !u!1 &8194469646276708010 stripped
 GameObject:

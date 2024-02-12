@@ -15,3 +15,6 @@ MonoBehaviour:
   TaskDescription: Shred Documents
   AmountToComplete: 1
   ObjectiveItemType: 4
+  requiredItem:
+  - {fileID: 562172798616457603, guid: f4601911ef39ae04e98bd433721934f5, type: 3}
+  - {fileID: 562172798616457603, guid: f4601911ef39ae04e98bd433721934f5, type: 3}

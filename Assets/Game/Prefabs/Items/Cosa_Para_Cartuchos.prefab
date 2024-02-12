@@ -11,17 +11,17 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: e07c4bbb31870704d99eecaac13f7773,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -14.110099
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e07c4bbb31870704d99eecaac13f7773,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.34
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e07c4bbb31870704d99eecaac13f7773,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 11.904231
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e07c4bbb31870704d99eecaac13f7773,
         type: 3}
@@ -66,7 +66,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e07c4bbb31870704d99eecaac13f7773,
         type: 3}
       propertyPath: m_Name
-      value: cosadecartucho
+      value: Cosa_Para_Cartuchos
       objectReference: {fileID: 0}
     - target: {fileID: 6247286681078212742, guid: e07c4bbb31870704d99eecaac13f7773,
         type: 3}

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.30692244, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1174,16 +1174,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8090b51b0801354d872421be788c7a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  firstDiskTasks:
-  - {fileID: 11400000, guid: 001a467cf4c2f244ebbec5ed2b38ca4a, type: 2}
-  - {fileID: 11400000, guid: 607357045abfd744cafdd4c65f7b4c54, type: 2}
-  - {fileID: 11400000, guid: 08c2463418207e844982161778eddd12, type: 2}
-  secondDiskTasks:
-  - {fileID: 11400000, guid: 0cf3bb6430931e84dac0d7e19cea4e08, type: 2}
-  - {fileID: 11400000, guid: 7d114826a3eafc942be05cc0a779bb3c, type: 2}
-  - {fileID: 11400000, guid: 1baafe6c9dcb2e746a4c94a169c18bb3, type: 2}
-  taskInfo: {fileID: 8670611470076275668, guid: dc85f4cbb0d89ad428d4eaa981b253c2,
-    type: 3}
+  taskInfoUIPrefab: {fileID: 0}
+  taskLists: []
+  CurrentTasksIndex: 0
+  displayTransform: {fileID: 0}
 --- !u!114 &1096734213
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1811,6 +1805,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerState: 0
+  StartingPosition: {x: 0, y: 0, z: 0}
   limitHorizontal: 6
   limitVertical: 2
   limitForward: 3
@@ -1883,7 +1878,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1975
   grabPoint: {fileID: 1882762331}
-  grabDistance: 2
+  grabRadius: 1
+  hoofRigidbody: {fileID: 0}
 --- !u!1 &1513030236
 GameObject:
   m_ObjectHideFlags: 0
