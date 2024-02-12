@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6efe985a631065a4da1a480ddd65e56e, type: 3}
   m_Name: 00_StampDocuments
   m_EditorClassIdentifier: 
-  TaskDescription: Stamp Documents
-  AmountToComplete: 3
+  TaskDescription: 'Today you must stamp the sheets we give you. '
+  AmountToComplete: 4
   ObjectiveItemType: 2
   requiredItem:
   - {fileID: 5368066776475968370, guid: 005f6d398a5509b4995555a9119494d5, type: 3}

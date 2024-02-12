@@ -8,6 +8,7 @@ public class TaskInfoUI : MonoBehaviour
 {
     [SerializeField] private Toggle checkmarkToggle;
     [SerializeField] private TextMeshProUGUI descriptionText;
+    [SerializeField] private Slider taskProgressSlider;
 
     public void SetDescription(string description)
     {
@@ -22,5 +23,15 @@ public class TaskInfoUI : MonoBehaviour
     public void Destroy()
     {
         Destroy(gameObject);
+    }
+
+    public void SetMaxProgress(int value)
+    {
+        taskProgressSlider.maxValue = value;
+    }
+
+    public void UpdateProgress(int value)
+    {
+        taskProgressSlider.value = value;
     }
 }

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Shredder : TaskObjectiveItem
 {
+    [SerializeField] private Item.ItemType itemType = Item.ItemType.SHREDDER;
     [SerializeField] private Transform paperInitialPosition;
     [SerializeField] private Transform paperFinalPosition;
     [SerializeField] private float shredTime = 0.5f;
@@ -31,5 +32,6 @@ public class Shredder : TaskObjectiveItem
         {
             doc.RespawnItem(TaskManager.Instance.itemSpawner);
         }
+        else TaskManager.Instance.TaksObjectiveDone(itemType);
     }
 }

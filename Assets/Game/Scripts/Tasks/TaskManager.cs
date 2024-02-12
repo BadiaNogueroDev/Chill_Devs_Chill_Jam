@@ -62,8 +62,10 @@ public class TaskManager : MonoBehaviour
             TaskInfoUI taskInfoUI = Instantiate(taskInfoUIPrefab, displayTransform);
             taskInfoUI.SetDescription(taskData.TaskDescription);
             taskInfoUI.SetCheckmark(false);
+            taskInfoUI.SetMaxProgress(taskData.AmountToComplete);
             GenerateTaskItemList(taskData);
             currentTasksList.Add(new Task(taskData, taskInfoUI));
+            //Debug.Log(taskData.ObjectiveItemType);
         }
 
         SpawnRandomizedTaskItem();
@@ -71,9 +73,11 @@ public class TaskManager : MonoBehaviour
 
     public void TaksObjectiveDone(Item.ItemType taskType)
     {
-        foreach (var task in currentTasksList)
+        foreach (Task task in currentTasksList)
         {
-            if (task.taskType != taskType)
+            //Debug.Log(task.taskItemType);
+
+            if (task.taskItemType != taskType)
                 return;
 
             task.ObjectiveDone();

@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6efe985a631065a4da1a480ddd65e56e, type: 3}
   m_Name: 02_SortDocuments
   m_EditorClassIdentifier: 
-  TaskDescription: Sort Documents
-  AmountToComplete: 1
+  TaskDescription: When you have finished signing, place the sheets in the appropriate
+    separator.
+  AmountToComplete: 4
   ObjectiveItemType: 3
+  requiredItem: []

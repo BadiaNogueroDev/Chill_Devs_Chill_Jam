@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6efe985a631065a4da1a480ddd65e56e, type: 3}
   m_Name: 05_ShredDocuments
   m_EditorClassIdentifier: 
-  TaskDescription: Shred Documents
-  AmountToComplete: 1
+  TaskDescription: You know what to do with the sheets that need to be destroyed.
+  AmountToComplete: 3
   ObjectiveItemType: 4
   requiredItem:
   - {fileID: 562172798616457603, guid: f4601911ef39ae04e98bd433721934f5, type: 3}

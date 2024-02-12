@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Separator : TaskObjectiveItem
 {
+    [SerializeField] private Item.ItemType itemType = Item.ItemType.SEPARATOR;
     [SerializeField] private Stamp.ItemFunction typeOfStampRequired;
     [SerializeField] private Transform paperPosition;
 
@@ -15,6 +16,7 @@ public class Separator : TaskObjectiveItem
             Debug.Log("Correct document");
             itemTouched.transform.position = paperPosition.position;
             itemTouched.transform.rotation = paperPosition.rotation;
+            TaskManager.Instance.TaksObjectiveDone(itemType);
         }
     }
 }
