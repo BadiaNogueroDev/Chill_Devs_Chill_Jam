@@ -3,10 +3,10 @@ using UnityEngine;
 
 public class TaskObjectiveItem : MonoBehaviour
 {
-    [SerializeField] private Item.ItemType itemToInteractWith;
-    [SerializeField] private StudioEventEmitter itemInteractionSoundRef;
+    [SerializeField] protected Item.ItemType itemToInteractWith;
+    [SerializeField] protected StudioEventEmitter itemInteractionSoundRef;
 
-    public void OnTriggerEnter(Collider other)
+    public virtual void OnTriggerEnter(Collider other)
     {
         if (!other.CompareTag(Item.ITEM_TAG))
             return;

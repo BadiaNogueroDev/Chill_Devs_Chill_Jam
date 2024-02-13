@@ -25,9 +25,11 @@ public class Item : MonoBehaviour
     [SerializeField] protected bool grabbable;
     [SerializeField] protected bool recoverable;
 
-    private int initialLayer;
+    protected int initialLayer;
     public Rigidbody itemRigidbody;
 
+    public bool Recoverable => recoverable;
+    
     private void Awake()
     {
         //itemRigidbody = GetComponent<Rigidbody>();
@@ -70,6 +72,7 @@ public class Item : MonoBehaviour
             return;
         }
 
+        gameObject.layer = initialLayer;
         itemRigidbody.isKinematic = false;
         transform.position = respawnTransform.position;
         transform.rotation = respawnTransform.rotation;

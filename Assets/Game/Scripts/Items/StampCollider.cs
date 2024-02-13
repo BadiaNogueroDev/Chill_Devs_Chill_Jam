@@ -19,13 +19,5 @@ public class StampCollider : MonoBehaviour
             return;
         
         stampablePaper.InteractWithItem(stamp);
-        /*
-        if (Physics.Raycast(transform.position, Vector3.down, 2f, 1))
-        {
-            
-        }
-        
-        Instantiate(stampPrefab,transform.position, other.transform.rotation);
-        */
     }
 }

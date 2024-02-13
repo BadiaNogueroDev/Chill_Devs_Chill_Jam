@@ -11,6 +11,8 @@ public class Shredder : TaskObjectiveItem
 
     public override void InteractWithItem(Item itemTouched)
     {
+        PlayerGrabController.Instance.RemoveHeldItem(itemTouched);
+        itemTouched.transform.SetParent(null);
         itemTouched.itemRigidbody.isKinematic = true;
         itemTouched.TryGetComponent(out Collider col);
         col.enabled = false;
@@ -32,6 +34,7 @@ public class Shredder : TaskObjectiveItem
 
         if (document.TryGetComponent(out Document doc) && doc.itemFunction == Document.ItemFunction.STAMP)
         {
+            doc.GetComponent<Collider>().enabled = true;
             doc.RespawnItem(TaskManager.Instance.itemSpawner);
         }
         else TaskManager.Instance.TaksObjectiveDone(itemType);

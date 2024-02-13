@@ -9,7 +9,11 @@ public class ItemFollowItem : MonoBehaviour
     void Update()
     {
         if (itemToFollow == null)
+        {
             Destroy(gameObject);
+            return;
+        }
+              
         transform.position = itemToFollow.position;
         if(followRotation)
             transform.rotation = itemToFollow.rotation;

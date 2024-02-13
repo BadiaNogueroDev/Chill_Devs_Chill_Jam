@@ -86,5 +86,141 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: aee2b90ad0d01384a9f0d5619cfa4382,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8004339696373628798}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: aee2b90ad0d01384a9f0d5619cfa4382,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4754086015313506179}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: aee2b90ad0d01384a9f0d5619cfa4382,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 675379626547846510}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: aee2b90ad0d01384a9f0d5619cfa4382,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3929108556567795648}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: aee2b90ad0d01384a9f0d5619cfa4382,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6558793653085474838}
   m_SourcePrefab: {fileID: 100100000, guid: aee2b90ad0d01384a9f0d5619cfa4382, type: 3}
+--- !u!1 &2627626263841976047 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: aee2b90ad0d01384a9f0d5619cfa4382,
+    type: 3}
+  m_PrefabInstance: {fileID: 2933635542828749758}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &8004339696373628798
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2627626263841976047}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 2426508734089713321, guid: aee2b90ad0d01384a9f0d5619cfa4382, type: 3}
+--- !u!54 &4754086015313506179
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2627626263841976047}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 1
+--- !u!114 &675379626547846510
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2627626263841976047}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b68e0681b1bec3e4abb067d02e972208, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemType: 7
+  grabbable: 1
+  recoverable: 0
+  itemRigidbody: {fileID: 0}
+--- !u!114 &3929108556567795648
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2627626263841976047}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0c72e4575b8a514b9b7d2766aeb3448, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minSpeedToSound: 2
+  impactSound: {fileID: 6558793653085474838}
+--- !u!114 &6558793653085474838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2627626263841976047}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1538051823
+      Data2: 1239351923
+      Data3: -750129250
+      Data4: -2019155093
+    Path: event:/Sounds/Props/PlasticBottle/BottleDrop
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20

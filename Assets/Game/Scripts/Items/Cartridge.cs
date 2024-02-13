@@ -10,14 +10,40 @@ public class Cartridge : Item
         PART_2
     }
     public ItemFunction itemFunction;
-
+    public bool isInHolder = false;
+    
     private void Awake()
     {
         itemType = ItemType.CARTRIDGE;
     }
 
+    public bool CanBeGrabbed()
+    {
+        Debug.Log(isInHolder);
+        Debug.Log(TaskManager.Instance.AllTasksDone);
+        
+        return !isInHolder && TaskManager.Instance.AllTasksDone;
+    }
+    
+    public override Item GrabItem(Transform grabberTransform)
+    {
+        if (!grabbable || !CanBeGrabbed())
+            return null;
+
+        itemRigidbody.isKinematic = true;
+        transform.SetParent(grabberTransform);
+        
+        gameObject.layer = 6;
+        return this;
+    }
+    
     public override void InteractedWithTaskObjective()
-    {        
+    {
+        itemRigidbody.isKinematic = true;
+        transform.SetParent(null);
+        PlayerGrabController.Instance.RemoveHeldItem(this);
+        gameObject.layer = initialLayer;
+        
         switch (itemFunction)
         {
             case ItemFunction.PART_1:

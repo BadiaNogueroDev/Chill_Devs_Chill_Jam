@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5591230347252986204}
   - component: {fileID: 6589097894824832135}
+  - component: {fileID: 6627328067481739249}
   m_Layer: 0
   m_Name: Capsule
   m_TagString: Untagged
@@ -55,6 +56,37 @@ CapsuleCollider:
   m_Height: 4
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &6627328067481739249
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 403609825029522731}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 1913521921
+      Data2: 1268254663
+      Data3: -625216098
+      Data4: -1754732375
+    Path: event:/Sounds/Props/Tube/TubeDropItem
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 1
+  OverrideMinDistance: 5
+  OverrideMaxDistance: 50
 --- !u!1001 &7326936337876907812
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -199,7 +231,11 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 6b5358b9a71834542b01ca54fa25541d,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 6033435681363325128}
+      addedObject: {fileID: 3593376502763665381}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 6b5358b9a71834542b01ca54fa25541d,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2736674824371152137}
   m_SourcePrefab: {fileID: 100100000, guid: 6b5358b9a71834542b01ca54fa25541d, type: 3}
 --- !u!4 &7071839690448474319 stripped
 Transform:
@@ -314,7 +350,21 @@ CapsuleCollider:
   m_Height: 20.49
   m_Direction: 2
   m_Center: {x: 0.54, y: -0.026752869, z: 7.5020204}
---- !u!114 &6033435681363325128
+--- !u!114 &3593376502763665381
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7597546279379454581}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0c72e4575b8a514b9b7d2766aeb3448, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minSpeedToSound: 5
+  impactSound: {fileID: 2736674824371152137}
+--- !u!114 &2736674824371152137
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -329,11 +379,11 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: 1913521921
-      Data2: 1268254663
-      Data3: -625216098
-      Data4: -1754732375
-    Path: event:/Sounds/Props/Tube/TubeDropItem
+      Data1: 359753508
+      Data2: 1287976955
+      Data3: -1035025236
+      Data4: -101040026
+    Path: event:/Sounds/Props/Tube/TubeHit
   Event: 
   PlayEvent: 0
   StopEvent: 0
@@ -343,5 +393,5 @@ MonoBehaviour:
   AllowNonRigidbodyDoppler: 0
   Params: []
   OverrideAttenuation: 1
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 40
+  OverrideMinDistance: 5
+  OverrideMaxDistance: 30

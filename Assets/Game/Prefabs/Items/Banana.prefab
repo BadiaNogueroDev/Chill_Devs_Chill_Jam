@@ -88,6 +88,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 6529934717510294346}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: f4098b0cd338fdd4a924dcf01552d7ec,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2272910803448098091}
   m_SourcePrefab: {fileID: 100100000, guid: f4098b0cd338fdd4a924dcf01552d7ec, type: 3}
 --- !u!1 &5914093165406924775 stripped
 GameObject:
@@ -191,3 +195,17 @@ MonoBehaviour:
   OverrideAttenuation: 0
   OverrideMinDistance: 1
   OverrideMaxDistance: 20
+--- !u!114 &2272910803448098091
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5914093165406924775}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0c72e4575b8a514b9b7d2766aeb3448, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minSpeedToSound: 2
+  impactSound: {fileID: 6529934717510294346}

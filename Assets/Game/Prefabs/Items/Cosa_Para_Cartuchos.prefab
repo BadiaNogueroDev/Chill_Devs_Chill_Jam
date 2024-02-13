@@ -119,10 +119,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: e07c4bbb31870704d99eecaac13f7773,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 647328981066424392}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: e07c4bbb31870704d99eecaac13f7773,
-        type: 3}
-      insertIndex: -1
       addedObject: {fileID: 6792768031998131149}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: e07c4bbb31870704d99eecaac13f7773,
         type: 3}
@@ -166,21 +162,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 3.2454538, y: 0.40460956, z: 0.61774015}
   m_Center: {x: -9.738154e-10, y: 0.8425967, z: 0.05741557}
---- !u!114 &647328981066424392
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3327924573775299983}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2e83229e5929f5846ac4bf7614dbae8b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemToInteractWith: 0
-  itemInteractionSoundRef: {fileID: 0}
-  cartridgeHoldPosition: {fileID: 3242514290444299991}
 --- !u!114 &6792768031998131149
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -195,7 +176,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemToInteractWith: 0
   itemInteractionSoundRef: {fileID: 2296507887632397122}
-  cartridgeHoldPosition: {fileID: 0}
+  cartridgeHoldPosition: {fileID: 3242514290444299991}
 --- !u!114 &2296507887632397122
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -224,9 +205,9 @@ MonoBehaviour:
   Preload: 0
   AllowNonRigidbodyDoppler: 0
   Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
+  OverrideAttenuation: 1
+  OverrideMinDistance: 5
+  OverrideMaxDistance: 40
 --- !u!1 &8907868903567629474 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6445033177286386812, guid: e07c4bbb31870704d99eecaac13f7773,

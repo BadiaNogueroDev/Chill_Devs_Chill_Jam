@@ -100,6 +100,18 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 4720920424269519115}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: e05502b82e2dc9c4ebcb7a23f2e86b18,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2062622869324682575}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: e05502b82e2dc9c4ebcb7a23f2e86b18,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5212362267489450985}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: e05502b82e2dc9c4ebcb7a23f2e86b18,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 9144856423236827412}
   m_SourcePrefab: {fileID: 100100000, guid: e05502b82e2dc9c4ebcb7a23f2e86b18, type: 3}
 --- !u!1 &7107617052651419604 stripped
 GameObject:
@@ -156,3 +168,64 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &2062622869324682575
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7107617052651419604}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0c72e4575b8a514b9b7d2766aeb3448, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minSpeedToSound: 2
+  impactSound: {fileID: 5212362267489450985}
+--- !u!114 &5212362267489450985
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7107617052651419604}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1538051823
+      Data2: 1239351923
+      Data3: -750129250
+      Data4: -2019155093
+    Path: event:/Sounds/Props/PlasticBottle/BottleDrop
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &9144856423236827412
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7107617052651419604}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b68e0681b1bec3e4abb067d02e972208, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemType: 7
+  grabbable: 1
+  recoverable: 0
+  itemRigidbody: {fileID: 0}

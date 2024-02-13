@@ -100,6 +100,14 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 2488562621285938901}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: fd692043e94257942a5f53ba5db9a78c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5719813246697363932}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: fd692043e94257942a5f53ba5db9a78c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7615900565091011577}
   m_SourcePrefab: {fileID: 100100000, guid: fd692043e94257942a5f53ba5db9a78c, type: 3}
 --- !u!1 &8053614843579811751 stripped
 GameObject:
@@ -156,3 +164,48 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 1
+--- !u!114 &5719813246697363932
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8053614843579811751}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0c72e4575b8a514b9b7d2766aeb3448, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minSpeedToSound: 2
+  impactSound: {fileID: 7615900565091011577}
+--- !u!114 &7615900565091011577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8053614843579811751}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -292310705
+      Data2: 1331830061
+      Data3: -1477053551
+      Data4: -150681431
+    Path: event:/Sounds/Props/Pot/PotDrop
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20

@@ -72,7 +72,9 @@ public class PlayerGrabController : MonoBehaviour
             return;
         
         grabbedItem = itemToGrab.GrabItem(grabPoint);
-        pickupSoundRef.Play();
+        
+        if(grabbedItem != null)
+            pickupSoundRef.Play();
     }
 
     private void AttemptItemDrop()

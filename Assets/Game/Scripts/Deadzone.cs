@@ -13,7 +13,8 @@ public class Deadzone : MonoBehaviour
         if (other.transform.TryGetComponent(out Item fallenItem))
         {
             fallenItem.RespawnItem(spawner);
-            tubeSoundRef.Play();
+            if(fallenItem.Recoverable)
+                tubeSoundRef.Play();
         }
     }
 }
