@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028373, g: 0.2257144, b: 0.30692196, a: 1}
+  m_IndirectSpecularColor: {r: 0.180284, g: 0.22571482, b: 0.3069228, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3548,7 +3548,6 @@ MonoBehaviour:
     type: 3}
   requiredTaskItems: []
   gameOverCanvas: {fileID: 64571071}
-  activateGameOver: 0
   tubeSoundRef: {fileID: 1734857301}
   mailSoundRef: {fileID: 1373439388}
 --- !u!4 &742099477
@@ -5759,6 +5758,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Paper shredder
+      objectReference: {fileID: 0}
+    - target: {fileID: 2928032216317957583, guid: 9d15e067a8b0b4f4cb44332686690d6b,
+        type: 3}
+      propertyPath: shredTime
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 3305361112553699831, guid: 9d15e067a8b0b4f4cb44332686690d6b,
         type: 3}
