@@ -17,19 +17,15 @@ public class Cartridge : Item
     }
 
     public override void InteractedWithTaskObjective()
-    {
-        //base.InteractedWithTaskObjective();
-        
+    {        
         switch (itemFunction)
         {
             case ItemFunction.PART_1:
-                if(TaskManager.Instance.CurrentTasksIndex == 0)
-                    TaskManager.Instance.NextTasks();
+                if (TaskManager.Instance.CurrentTasksIndex == 0) TaskManager.Instance.NextTasks();
                 break;
             
             case ItemFunction.PART_2:
-                if(TaskManager.Instance.CurrentTasksIndex == 1)
-                    TaskManager.Instance.NextTasks();
+                if (TaskManager.Instance.CurrentTasksIndex == 1) TaskManager.Instance.NextTasks();
                 break;
         }
     }

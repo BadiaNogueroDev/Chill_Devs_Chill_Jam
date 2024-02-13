@@ -19,7 +19,7 @@ public class Task
         currentObjectiveCount++;
         taskInfoUI.UpdateProgress(currentObjectiveCount);
         if (TaskCompleted = currentObjectiveCount >= taskData.AmountToComplete) taskInfoUI.SetCheckmark(true);
-        UnityEngine.Debug.Log("Task: " + taskData.name + ". Progress: " + currentObjectiveCount + "/" + taskData.AmountToComplete);
+        TaskManager.Instance.CheckAllTasksDone();
     }
     
     public void RemoveTaskFromList()

@@ -14,7 +14,7 @@ public class TaskManager : MonoBehaviour
     [SerializeField] private float cartridgeSpawnWait = 5f;
 
     [SerializeField] private TaskInfoUI taskInfoUIPrefab;
-    
+
     private List<Task> currentTasksList = new List<Task>();
     [SerializeField] private List<TasksList> taskLists = new List<TasksList>();
 
@@ -43,19 +43,26 @@ public class TaskManager : MonoBehaviour
         Instantiate(item, itemSpawner.position, itemSpawner.rotation);
     }
 
+    public void CheckAllTasksDone()
+    {
+        if (AllTasksDone)
+        {
+            StartCoroutine(SpawnCartridge(secondCartridge));
+            CurrentTasksIndex++;
+
+            foreach (var task in currentTasksList)
+            {
+                task.RemoveTaskFromList();
+            }
+
+            currentTasksList.Clear();
+        }
+    }
+
     public void NextTasks()
     {
         if (!AllTasksDone)
             return;
-        
-        foreach (var task in currentTasksList)
-        {
-            task.RemoveTaskFromList();
-        }
-        
-        currentTasksList.Clear();
-
-        StartCoroutine(SpawnCartridge(secondCartridge));
 
         foreach (var taskData in taskLists[CurrentTasksIndex].taskList)
         {
@@ -83,14 +90,6 @@ public class TaskManager : MonoBehaviour
                 currentTasksList[i].ObjectiveDone();
             }
         }
-        
-        /*foreach (Task task in currentTasksList)
-        {
-            if (task.taskItemType != taskType)
-                return;
-
-            task.ObjectiveDone();
-        }*/
     }
 
     public void GenerateTaskItemList(TaskData data)
