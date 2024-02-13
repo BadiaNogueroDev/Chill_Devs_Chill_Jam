@@ -199,35 +199,20 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -5562437179015724746, guid: 307bcb7440bc7084991d0538702b1620,
+        type: 3}
+      propertyPath: OverrideMaxDistance
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: -5562437179015724746, guid: 307bcb7440bc7084991d0538702b1620,
+        type: 3}
+      propertyPath: OverrideMinDistance
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7397395206949293798, guid: 307bcb7440bc7084991d0538702b1620,
         type: 3}
       propertyPath: m_Name
       value: Papel_Redonda
-      objectReference: {fileID: 0}
-    - target: {fileID: 7691706402494219207, guid: 307bcb7440bc7084991d0538702b1620,
-        type: 3}
-      propertyPath: m_Size.x
-      value: 2.3823593
-      objectReference: {fileID: 0}
-    - target: {fileID: 7691706402494219207, guid: 307bcb7440bc7084991d0538702b1620,
-        type: 3}
-      propertyPath: m_Size.y
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7691706402494219207, guid: 307bcb7440bc7084991d0538702b1620,
-        type: 3}
-      propertyPath: m_Size.z
-      value: 3.3441608
-      objectReference: {fileID: 0}
-    - target: {fileID: 7691706402494219207, guid: 307bcb7440bc7084991d0538702b1620,
-        type: 3}
-      propertyPath: m_Center.x
-      value: 0.20226394
-      objectReference: {fileID: 0}
-    - target: {fileID: 7691706402494219207, guid: 307bcb7440bc7084991d0538702b1620,
-        type: 3}
-      propertyPath: m_Center.z
-      value: -0.22607213
       objectReference: {fileID: 0}
     - target: {fileID: 7918175954278782044, guid: 307bcb7440bc7084991d0538702b1620,
         type: 3}
@@ -1069,31 +1054,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4430927754551687508, guid: 005f6d398a5509b4995555a9119494d5,
-        type: 3}
-      propertyPath: m_Size.x
-      value: 2.3823593
-      objectReference: {fileID: 0}
-    - target: {fileID: 4430927754551687508, guid: 005f6d398a5509b4995555a9119494d5,
-        type: 3}
-      propertyPath: m_Size.y
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4430927754551687508, guid: 005f6d398a5509b4995555a9119494d5,
-        type: 3}
-      propertyPath: m_Size.z
-      value: 3.3441608
-      objectReference: {fileID: 0}
-    - target: {fileID: 4430927754551687508, guid: 005f6d398a5509b4995555a9119494d5,
-        type: 3}
-      propertyPath: m_Center.x
-      value: 0.20226394
-      objectReference: {fileID: 0}
-    - target: {fileID: 4430927754551687508, guid: 005f6d398a5509b4995555a9119494d5,
-        type: 3}
-      propertyPath: m_Center.z
-      value: -0.22607213
-      objectReference: {fileID: 0}
     - target: {fileID: 4698631988366375368, guid: 005f6d398a5509b4995555a9119494d5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1143,6 +1103,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5321056621960514938, guid: 005f6d398a5509b4995555a9119494d5,
+        type: 3}
+      propertyPath: OverrideMaxDistance
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 5321056621960514938, guid: 005f6d398a5509b4995555a9119494d5,
+        type: 3}
+      propertyPath: OverrideMinDistance
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5368066776475968370, guid: 005f6d398a5509b4995555a9119494d5,
         type: 3}
@@ -1490,7 +1460,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 629584118}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.30697367, y: -1.257983e-15, z: -4.6472775e-16, w: 0.95171803}
+  m_LocalRotation: {x: 0.30697364, y: 0.000000040111914, z: -0.00000001293797, w: 0.95171803}
   m_LocalPosition: {x: 0, y: 9, z: -7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2529,7 +2499,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1513030236}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.30697367, y: -1.257983e-15, z: -4.6472775e-16, w: 0.95171803}
+  m_LocalRotation: {x: 0.30697364, y: 0.000000040111914, z: -0.00000001293797, w: 0.95171803}
   m_LocalPosition: {x: 0, y: 9, z: -7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2916,30 +2886,15 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8959120482318052616, guid: e16f77fd67971f84d861664cb0452b26,
+    - target: {fileID: 7151942613959577440, guid: e16f77fd67971f84d861664cb0452b26,
         type: 3}
-      propertyPath: m_Size.x
-      value: 2.3823593
+      propertyPath: OverrideMaxDistance
+      value: 20
       objectReference: {fileID: 0}
-    - target: {fileID: 8959120482318052616, guid: e16f77fd67971f84d861664cb0452b26,
+    - target: {fileID: 7151942613959577440, guid: e16f77fd67971f84d861664cb0452b26,
         type: 3}
-      propertyPath: m_Size.y
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8959120482318052616, guid: e16f77fd67971f84d861664cb0452b26,
-        type: 3}
-      propertyPath: m_Size.z
-      value: 3.3441608
-      objectReference: {fileID: 0}
-    - target: {fileID: 8959120482318052616, guid: e16f77fd67971f84d861664cb0452b26,
-        type: 3}
-      propertyPath: m_Center.x
-      value: 0.20226394
-      objectReference: {fileID: 0}
-    - target: {fileID: 8959120482318052616, guid: e16f77fd67971f84d861664cb0452b26,
-        type: 3}
-      propertyPath: m_Center.z
-      value: -0.22607213
+      propertyPath: OverrideMinDistance
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2985,6 +2940,16 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -9099476271866258795, guid: f4601911ef39ae04e98bd433721934f5,
+        type: 3}
+      propertyPath: OverrideMaxDistance
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: -9099476271866258795, guid: f4601911ef39ae04e98bd433721934f5,
+        type: 3}
+      propertyPath: OverrideMinDistance
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 562172798616457603, guid: f4601911ef39ae04e98bd433721934f5,
         type: 3}
       propertyPath: m_Name
@@ -3039,31 +3004,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1557312142173552869, guid: f4601911ef39ae04e98bd433721934f5,
-        type: 3}
-      propertyPath: m_Size.x
-      value: 2.3823593
-      objectReference: {fileID: 0}
-    - target: {fileID: 1557312142173552869, guid: f4601911ef39ae04e98bd433721934f5,
-        type: 3}
-      propertyPath: m_Size.y
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1557312142173552869, guid: f4601911ef39ae04e98bd433721934f5,
-        type: 3}
-      propertyPath: m_Size.z
-      value: 3.3441608
-      objectReference: {fileID: 0}
-    - target: {fileID: 1557312142173552869, guid: f4601911ef39ae04e98bd433721934f5,
-        type: 3}
-      propertyPath: m_Center.x
-      value: 0.20226394
-      objectReference: {fileID: 0}
-    - target: {fileID: 1557312142173552869, guid: f4601911ef39ae04e98bd433721934f5,
-        type: 3}
-      propertyPath: m_Center.z
-      value: -0.22607213
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

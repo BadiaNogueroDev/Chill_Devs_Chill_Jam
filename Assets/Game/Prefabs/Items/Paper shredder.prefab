@@ -1,5 +1,36 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &815317282749256227
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7917957396238800831}
+  m_Layer: 0
+  m_Name: PaperFinalPosition
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7917957396238800831
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 815317282749256227}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.5000002, y: 0.49999994, z: 0.49999994, w: 0.5}
+  m_LocalPosition: {x: 0, y: 1.74, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3305361112553699831}
+  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 90}
 --- !u!1 &5837412347839301419
 GameObject:
   m_ObjectHideFlags: 0
@@ -10,7 +41,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5498560351807271310}
   m_Layer: 0
-  m_Name: PaperPosition
+  m_Name: PaperInitialPosition
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -24,13 +55,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5837412347839301419}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.5000002, y: -0.49999982, z: 0.49999958, w: 0.5000004}
+  m_LocalRotation: {x: -0.5000002, y: 0.49999994, z: 0.49999994, w: 0.5}
   m_LocalPosition: {x: 0, y: 6.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3305361112553699831}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 90}
 --- !u!1001 &3050547827401448988
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -131,6 +162,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 5498560351807271310}
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: e2b5ea0ee8d4f004a88f7941deebe224,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7917957396238800831}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: e2b5ea0ee8d4f004a88f7941deebe224,
         type: 3}
@@ -185,7 +220,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemToInteractWith: 1
-  paperPosition: {fileID: 5498560351807271310}
+  itemType: 4
+  paperInitialPosition: {fileID: 5498560351807271310}
+  paperFinalPosition: {fileID: 7917957396238800831}
+  shredTime: 0.5
 --- !u!4 &3305361112553699831 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: e2b5ea0ee8d4f004a88f7941deebe224,

@@ -186,6 +186,14 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 5139704679207958807}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 341c39b840be3294e834a6c3f9e75268,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -5465237094637543413}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 341c39b840be3294e834a6c3f9e75268,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5034822533274184889}
   m_SourcePrefab: {fileID: 100100000, guid: 341c39b840be3294e834a6c3f9e75268, type: 3}
 --- !u!1 &8298218965695652091 stripped
 GameObject:
@@ -254,10 +262,56 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b9acf2828a90f343943fbad32fcc000, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  itemType: 0
   grabbable: 1
   recoverable: 1
   itemRigidbody: {fileID: 0}
   itemFunction: 0
+--- !u!114 &-5465237094637543413
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8298218965695652091}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0c72e4575b8a514b9b7d2766aeb3448, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minSpeedToSound: 2
+  impactSound: {fileID: 5034822533274184889}
+--- !u!114 &5034822533274184889
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8298218965695652091}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1793725720
+      Data2: 1104108337
+      Data3: 534152887
+      Data4: 107393666
+    Path: event:/Sounds/Props/Cartridge/CartridgeDrop
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!4 &8674744882054740545 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 341c39b840be3294e834a6c3f9e75268,

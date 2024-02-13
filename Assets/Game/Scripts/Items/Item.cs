@@ -65,7 +65,10 @@ public class Item : MonoBehaviour
     public virtual void RespawnItem(Transform respawnTransform)
     {
         if (!recoverable)
+        {
+            Destroy(gameObject);
             return;
+        }
 
         itemRigidbody.isKinematic = false;
         transform.position = respawnTransform.position;

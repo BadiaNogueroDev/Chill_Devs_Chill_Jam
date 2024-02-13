@@ -91,6 +91,22 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 6424424721098091939}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 5fbbb92bbacf4e741a639f185e9ae77a,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2720049213682692861}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 5fbbb92bbacf4e741a639f185e9ae77a,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7085561505749700119}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 5fbbb92bbacf4e741a639f185e9ae77a,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5904223528746246173}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 5fbbb92bbacf4e741a639f185e9ae77a,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4375306815622091752}
   m_SourcePrefab: {fileID: 100100000, guid: 5fbbb92bbacf4e741a639f185e9ae77a, type: 3}
 --- !u!1 &6312465896975206165 stripped
 GameObject:
@@ -119,3 +135,91 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.8, y: 1.8, z: 0.4}
   m_Center: {x: 0.05, y: -0.03, z: 0.05}
+--- !u!54 &2720049213682692861
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6312465896975206165}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &7085561505749700119
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6312465896975206165}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8cce27f03444cde4aab4c55ec795ce04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemType: 7
+  grabbable: 1
+  recoverable: 0
+  itemRigidbody: {fileID: 0}
+--- !u!114 &5904223528746246173
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6312465896975206165}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0c72e4575b8a514b9b7d2766aeb3448, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minSpeedToSound: 2
+  impactSound: {fileID: 4375306815622091752}
+--- !u!114 &4375306815622091752
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6312465896975206165}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 814756343
+      Data2: 1100252042
+      Data3: 183479729
+      Data4: 987066057
+    Path: event:/Sounds/Props/Paper/PaperDrop
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: -1
+  OverrideMaxDistance: -1

@@ -156,6 +156,14 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: -5134292582460769656}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: dda084a3f7791254ab5d4f98b9d4d16f,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1956598131439093935}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: dda084a3f7791254ab5d4f98b9d4d16f,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -5562437179015724746}
   m_SourcePrefab: {fileID: 100100000, guid: dda084a3f7791254ab5d4f98b9d4d16f, type: 3}
 --- !u!1 &7397395206949293798 stripped
 GameObject:
@@ -182,8 +190,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.4242231, y: 0.0155057665, z: 0.5984511}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 2.3823593, y: 0.1, z: 3.3441608}
+  m_Center: {x: 0.20226394, y: 0, z: -0.22607213}
 --- !u!54 &6404007788519781550
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -243,3 +251,48 @@ MonoBehaviour:
   recoverable: 1
   itemRigidbody: {fileID: 6404007788519781550}
   itemFunction: 0
+--- !u!114 &1956598131439093935
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7397395206949293798}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0c72e4575b8a514b9b7d2766aeb3448, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minSpeedToSound: 2
+  impactSound: {fileID: -5562437179015724746}
+--- !u!114 &-5562437179015724746
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7397395206949293798}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 814756343
+      Data2: 1100252042
+      Data3: 183479729
+      Data4: 987066057
+    Path: event:/Sounds/Props/Paper/PaperDrop
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: -1
+  OverrideMaxDistance: -1

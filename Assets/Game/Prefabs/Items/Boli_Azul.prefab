@@ -115,6 +115,14 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 8196154032896959652}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 4bde30a1c886f5b40be91b78a471c721,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -1946566002243819748}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 4bde30a1c886f5b40be91b78a471c721,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -7745106300097599718}
   m_SourcePrefab: {fileID: 100100000, guid: 4bde30a1c886f5b40be91b78a471c721, type: 3}
 --- !u!1 &983354869880515993 stripped
 GameObject:
@@ -205,8 +213,8 @@ Rigidbody:
   m_GameObject: {fileID: 983354869880515993}
   serializedVersion: 4
   m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
+  m_Drag: 2
+  m_AngularDrag: 0.1
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -239,3 +247,48 @@ MonoBehaviour:
   grabbable: 1
   recoverable: 0
   itemRigidbody: {fileID: 0}
+--- !u!114 &-1946566002243819748
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 983354869880515993}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0c72e4575b8a514b9b7d2766aeb3448, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minSpeedToSound: 2
+  impactSound: {fileID: -7745106300097599718}
+--- !u!114 &-7745106300097599718
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 983354869880515993}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1594414227
+      Data2: 1150790231
+      Data3: 2143100349
+      Data4: 914438920
+    Path: event:/Sounds/Props/Pen/BoliGrab
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: -1
+  OverrideMaxDistance: -1

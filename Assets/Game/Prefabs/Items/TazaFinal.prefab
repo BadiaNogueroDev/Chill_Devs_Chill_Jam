@@ -134,6 +134,8 @@ GameObject:
   - component: {fileID: 9216085122431999419}
   - component: {fileID: 237490501950985820}
   - component: {fileID: 6198667068895814569}
+  - component: {fileID: 185014870275625658}
+  - component: {fileID: 7893865039190112435}
   m_Layer: 10
   m_Name: TAZA
   m_TagString: Untagged
@@ -271,6 +273,51 @@ MonoBehaviour:
   grabbable: 1
   recoverable: 0
   itemRigidbody: {fileID: 0}
+--- !u!114 &185014870275625658
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5097043677663977415}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0c72e4575b8a514b9b7d2766aeb3448, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minSpeedToSound: 2
+  impactSound: {fileID: 7893865039190112435}
+--- !u!114 &7893865039190112435
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5097043677663977415}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -716609991
+      Data2: 1281432139
+      Data3: 48840628
+      Data4: -1863759249
+    Path: event:/Sounds/Props/Cup/CupDrop
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: -1
+  OverrideMaxDistance: -1
 --- !u!1 &8491869376675865961
 GameObject:
   m_ObjectHideFlags: 0

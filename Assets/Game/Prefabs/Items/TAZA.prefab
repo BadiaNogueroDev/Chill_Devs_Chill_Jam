@@ -71,10 +71,147 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 52458b4dc4066be49a399337264889e9,
         type: 3}
       propertyPath: m_Name
-      value: Taza
+      value: TAZA
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 52458b4dc4066be49a399337264889e9,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5068494087038232670}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 52458b4dc4066be49a399337264889e9,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1262211108255740569}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 52458b4dc4066be49a399337264889e9,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3621299483865000127}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 52458b4dc4066be49a399337264889e9,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -8668903058006761015}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 52458b4dc4066be49a399337264889e9,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6736428017479252707}
   m_SourcePrefab: {fileID: 100100000, guid: 52458b4dc4066be49a399337264889e9, type: 3}
+--- !u!1 &1778064326671983806 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 52458b4dc4066be49a399337264889e9,
+    type: 3}
+  m_PrefabInstance: {fileID: 1472006119552375279}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &5068494087038232670
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1778064326671983806}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -3996424826325431188, guid: 52458b4dc4066be49a399337264889e9, type: 3}
+--- !u!54 &1262211108255740569
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1778064326671983806}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 2
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 1
+--- !u!114 &3621299483865000127
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1778064326671983806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b68e0681b1bec3e4abb067d02e972208, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemType: 0
+  grabbable: 1
+  recoverable: 0
+  itemRigidbody: {fileID: 0}
+--- !u!114 &-8668903058006761015
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1778064326671983806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0c72e4575b8a514b9b7d2766aeb3448, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minSpeedToSound: 2
+  impactSound: {fileID: 7151942613959577440, guid: e16f77fd67971f84d861664cb0452b26,
+    type: 3}
+--- !u!114 &6736428017479252707
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1778064326671983806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: -1
+  OverrideMaxDistance: -1
