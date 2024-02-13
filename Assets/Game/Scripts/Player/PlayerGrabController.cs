@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using FMODUnity;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.Serialization;
@@ -18,6 +19,7 @@ public class PlayerGrabController : MonoBehaviour
     
     private Animator animator;
     [SerializeField] private Rigidbody hoofRigidbody;
+    [SerializeField] private StudioEventEmitter pickupSoundRef;
 
     private void Awake()
     {
@@ -70,6 +72,7 @@ public class PlayerGrabController : MonoBehaviour
             return;
         
         grabbedItem = itemToGrab.GrabItem(grabPoint);
+        pickupSoundRef.Play();
     }
 
     private void AttemptItemDrop()

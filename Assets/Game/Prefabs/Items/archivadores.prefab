@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 203418392411720636}
   - component: {fileID: 9028441426376333902}
   - component: {fileID: 5695980047564067438}
+  - component: {fileID: 2039147620020298364}
   m_Layer: 0
   m_Name: SeparadorRedonda
   m_TagString: Untagged
@@ -67,9 +68,41 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemToInteractWith: 1
+  itemInteractionSoundRef: {fileID: 2039147620020298364}
   itemType: 3
   typeOfStampRequired: 1
   paperPosition: {fileID: 203418392411720636}
+--- !u!114 &2039147620020298364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2112838025580743453}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 814756343
+      Data2: 1100252042
+      Data3: 183479729
+      Data4: 987066057
+    Path: event:/Sounds/Props/Paper/PaperDrop
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &4881536837130253935
 GameObject:
   m_ObjectHideFlags: 0
@@ -81,6 +114,7 @@ GameObject:
   - component: {fileID: 8745806439915976415}
   - component: {fileID: 5925891644143947832}
   - component: {fileID: 978781697064578796}
+  - component: {fileID: 2461427343497307140}
   m_Layer: 0
   m_Name: SeparadorCuadrado
   m_TagString: Untagged
@@ -137,9 +171,41 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemToInteractWith: 1
+  itemInteractionSoundRef: {fileID: 2461427343497307140}
   itemType: 3
   typeOfStampRequired: 0
   paperPosition: {fileID: 8745806439915976415}
+--- !u!114 &2461427343497307140
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4881536837130253935}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 814756343
+      Data2: 1100252042
+      Data3: 183479729
+      Data4: 987066057
+    Path: event:/Sounds/Props/Paper/PaperDrop
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &8852105756216961109
 GameObject:
   m_ObjectHideFlags: 0
@@ -151,6 +217,7 @@ GameObject:
   - component: {fileID: 3273469798391704221}
   - component: {fileID: 8397273499450964254}
   - component: {fileID: 5674177674520837471}
+  - component: {fileID: 4094571540189635333}
   m_Layer: 0
   m_Name: SeparadorTriangulo
   m_TagString: Untagged
@@ -207,9 +274,41 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemToInteractWith: 1
+  itemInteractionSoundRef: {fileID: 4094571540189635333}
   itemType: 3
   typeOfStampRequired: 2
   paperPosition: {fileID: 3273469798391704221}
+--- !u!114 &4094571540189635333
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8852105756216961109}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 814756343
+      Data2: 1100252042
+      Data3: 183479729
+      Data4: 987066057
+    Path: event:/Sounds/Props/Paper/PaperDrop
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1001 &115991357519355838
 PrefabInstance:
   m_ObjectHideFlags: 0

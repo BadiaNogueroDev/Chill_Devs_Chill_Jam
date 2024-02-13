@@ -1,8 +1,10 @@
+using FMODUnity;
 using UnityEngine;
 
 public class TaskObjectiveItem : MonoBehaviour
 {
     [SerializeField] private Item.ItemType itemToInteractWith;
+    [SerializeField] private StudioEventEmitter itemInteractionSoundRef;
 
     public void OnTriggerEnter(Collider other)
     {
@@ -12,6 +14,7 @@ public class TaskObjectiveItem : MonoBehaviour
         if (other.TryGetComponent(out Item itemTouched) && itemTouched.itemType == itemToInteractWith)
         {
             InteractWithItem(itemTouched);
+            itemInteractionSoundRef.Play();
         }
     }
 

@@ -5,10 +5,13 @@ using UnityEngine;
 public class ItemFollowItem : MonoBehaviour
 {
     [SerializeField] private Transform itemToFollow;
-
+    [SerializeField] private bool followRotation = true;
     void Update()
     {
+        if (itemToFollow == null)
+            Destroy(gameObject);
         transform.position = itemToFollow.position;
-        transform.rotation = itemToFollow.rotation;
+        if(followRotation)
+            transform.rotation = itemToFollow.rotation;
     }
 }

@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using FMODUnity;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
@@ -24,6 +25,8 @@ public class TaskManager : MonoBehaviour
     [SerializeField] private GameObject firstCartridge;
     [SerializeField] private GameObject secondCartridge;
     [SerializeField] private List<GameObject> requiredTaskItems = new List<GameObject>();
+    [SerializeField] private StudioEventEmitter tubeSoundRef;
+    [SerializeField] private StudioEventEmitter mailSoundRef;
 
     public bool AllTasksDone => currentTasksList.All(x => x.TaskCompleted);
 
@@ -79,6 +82,7 @@ public class TaskManager : MonoBehaviour
             Debug.Log(currentTasksList[i].taskItemType);
         }
         SpawnRandomizedTaskItem();
+        mailSoundRef.Play();
     }
 
     public void TaksObjectiveDone(Item.ItemType taskType)
@@ -116,6 +120,7 @@ public class TaskManager : MonoBehaviour
         for (int i = 0; i < requiredTaskItems.Count; i++)
         {
             Instantiate(requiredTaskItems[i], itemSpawner.position, itemSpawner.rotation);
+            tubeSoundRef.Play();
         }
     }
 }
