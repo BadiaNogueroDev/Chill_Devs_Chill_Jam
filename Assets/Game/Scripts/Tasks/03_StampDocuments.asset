@@ -12,8 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6efe985a631065a4da1a480ddd65e56e, type: 3}
   m_Name: 03_StampDocuments
   m_EditorClassIdentifier: 
-  TaskDescription: Now you must stamp the sheets with the corresponding stamp. Remember
-    to ink them well!
+  TaskDescription: Now you must stamp the sheets with the corresponding stamp.
   AmountToComplete: 5
   ObjectiveItemType: 2
   requiredItem:
