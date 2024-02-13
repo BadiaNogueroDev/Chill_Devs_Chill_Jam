@@ -26,7 +26,6 @@ public class TaskManager : MonoBehaviour
     [SerializeField] private GameObject secondCartridge;
     [SerializeField] private List<GameObject> requiredTaskItems = new List<GameObject>();
     [SerializeField] private IngameMenu gameOverCanvas;
-    [SerializeField] private bool activateGameOver = false;
     [SerializeField] private StudioEventEmitter tubeSoundRef;
     [SerializeField] private StudioEventEmitter mailSoundRef;
 
@@ -42,15 +41,6 @@ public class TaskManager : MonoBehaviour
         StartCoroutine(SpawnCartridge(firstCartridge));
     }
 
-    private void Update()
-    {
-        if (activateGameOver)
-        {
-            CheckAllTasksDone();
-            return;
-        }
-    }
-
     public IEnumerator SpawnCartridge(GameObject item)
     {
         yield return new WaitForSeconds(cartridgeSpawnWait);
@@ -59,7 +49,7 @@ public class TaskManager : MonoBehaviour
 
     public void CheckAllTasksDone()
     {
-        if (AllTasksDone || activateGameOver)
+        if (AllTasksDone)
         {
             StartCoroutine(SpawnCartridge(secondCartridge));
             CurrentTasksIndex++;
@@ -71,8 +61,7 @@ public class TaskManager : MonoBehaviour
 
             currentTasksList.Clear();
             
-            activateGameOver = false;
-            if (CurrentTasksIndex > taskLists.Count)
+            if (CurrentTasksIndex >= taskLists.Count)
             {
                 gameOverCanvas.ShowMenu();
                 return;
@@ -84,6 +73,8 @@ public class TaskManager : MonoBehaviour
     {
         if (!AllTasksDone)
             return;
+        
+        requiredTaskItems.Clear();
 
         foreach (var taskData in taskLists[CurrentTasksIndex].taskList)
         {

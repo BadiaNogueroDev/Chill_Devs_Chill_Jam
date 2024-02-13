@@ -6,6 +6,9 @@ public class CartridgeHolder : TaskObjectiveItem
 
     public override void InteractWithItem(Item itemTouched)
     {
+        if (((Cartridge)itemTouched).HasBeenUsed)
+            return;
+        
         base.InteractWithItem(itemTouched);
 
         itemTouched.transform.position = cartridgeHoldPosition.position;

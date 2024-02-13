@@ -13,13 +13,14 @@ public class Separator : TaskObjectiveItem
     {
         if (itemTouched.TryGetComponent(out StampablePaper document) && document.StampType == typeOfStampRequired && document.stamped)
         {
-            //base.InteractWithItem(itemTouched);
-
+            itemTouched.transform.SetParent(null);
+            PlayerGrabController.Instance.RemoveHeldItem(itemTouched);
+            TaskManager.Instance.TaksObjectiveDone(itemType);
             itemTouched.GetComponent<Collider>().enabled = false;
+            
             itemTouched.itemRigidbody.isKinematic = true;
             itemTouched.transform.position = paperPosition.position + new Vector3(0,0.142f * filesAmount,0);
             itemTouched.transform.rotation = paperPosition.rotation;
-            TaskManager.Instance.TaksObjectiveDone(itemType);
             filesAmount++;
         }
     }
