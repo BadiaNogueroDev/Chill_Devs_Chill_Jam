@@ -120,6 +120,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stampPrefab: {fileID: 6483314325990947723, guid: 68fc608c3060bd04e9e9c08f17db89a7,
     type: 3}
+  stampableLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!1001 &6486415893575730692
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -348,9 +351,9 @@ MonoBehaviour:
   Preload: 0
   AllowNonRigidbodyDoppler: 0
   Params: []
-  OverrideAttenuation: 0
+  OverrideAttenuation: 1
   OverrideMinDistance: 1
-  OverrideMaxDistance: 20
+  OverrideMaxDistance: 30
 --- !u!136 &1417615758239948242
 CapsuleCollider:
   m_ObjectHideFlags: 0

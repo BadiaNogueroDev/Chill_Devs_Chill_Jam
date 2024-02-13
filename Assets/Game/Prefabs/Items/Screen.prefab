@@ -461,8 +461,8 @@ MonoBehaviour:
   AllowNonRigidbodyDoppler: 0
   Params: []
   OverrideAttenuation: 1
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 35
+  OverrideMinDistance: 5
+  OverrideMaxDistance: 40
 --- !u!4 &3366721707583081016 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: ba2ef3ac97a91434aa6a43e6f08390aa,

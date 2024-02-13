@@ -91,5 +91,141 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: b134216568e9dff428f7a69d0c45fcb3,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6724282310475586450}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: b134216568e9dff428f7a69d0c45fcb3,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6559263545733110054}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: b134216568e9dff428f7a69d0c45fcb3,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8906620934924626222}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: b134216568e9dff428f7a69d0c45fcb3,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5102921368581310567}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: b134216568e9dff428f7a69d0c45fcb3,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7568850671828465837}
   m_SourcePrefab: {fileID: 100100000, guid: b134216568e9dff428f7a69d0c45fcb3, type: 3}
+--- !u!1 &7254624833622291434 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: b134216568e9dff428f7a69d0c45fcb3,
+    type: 3}
+  m_PrefabInstance: {fileID: 7524656295778291387}
+  m_PrefabAsset: {fileID: 0}
+--- !u!54 &6724282310475586450
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7254624833622291434}
+  serializedVersion: 4
+  m_Mass: 10
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &6559263545733110054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7254624833622291434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b68e0681b1bec3e4abb067d02e972208, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemType: 7
+  grabbable: 1
+  recoverable: 0
+  itemRigidbody: {fileID: 0}
+--- !u!64 &8906620934924626222
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7254624833622291434}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -5483322742308393576, guid: b134216568e9dff428f7a69d0c45fcb3, type: 3}
+--- !u!114 &5102921368581310567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7254624833622291434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0c72e4575b8a514b9b7d2766aeb3448, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minSpeedToSound: 2
+  impactSound: {fileID: 7568850671828465837}
+--- !u!114 &7568850671828465837
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7254624833622291434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 86639380
+      Data2: 1231854490
+      Data3: 2051557801
+      Data4: -2068991860
+    Path: event:/Sounds/Props/Stamp/StampDrop
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 1
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 30

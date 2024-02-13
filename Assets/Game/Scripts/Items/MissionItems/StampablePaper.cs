@@ -24,14 +24,6 @@ public class StampablePaper : TaskObjectiveItem
             return;
 
         stamped = true;
-        StartCoroutine("InstantiateDecal");
         base.InteractWithItem(itemTouched);
-    }
-
-    IEnumerator InstantiateDecal()
-    {
-        yield return new WaitForSeconds(0.2f);
-        GameObject newDecal = Instantiate(decal, this.transform, false);
-        newDecal.transform.localPosition = new Vector3(collisionPoint.x, 0.06f, collisionPoint.z);
     }
 }

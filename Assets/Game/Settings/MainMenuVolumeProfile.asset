@@ -110,7 +110,7 @@ MonoBehaviour:
     m_Value: 1.9
   focalLength:
     m_OverrideState: 1
-    m_Value: 86
+    m_Value: 73
   bladeCount:
     m_OverrideState: 1
     m_Value: 5

@@ -317,8 +317,8 @@ MonoBehaviour:
   AllowNonRigidbodyDoppler: 0
   Params: []
   OverrideAttenuation: 1
-  OverrideMinDistance: -1
-  OverrideMaxDistance: -1
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 30
 --- !u!1 &8491869376675865961
 GameObject:
   m_ObjectHideFlags: 0

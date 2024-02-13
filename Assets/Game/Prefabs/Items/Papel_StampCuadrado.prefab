@@ -232,8 +232,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemToInteractWith: 2
+  itemInteractionSoundRef: {fileID: 0}
   StampType: 0
   stamped: 0
+  collisionPoint: {x: 0, y: 0, z: 0}
   decal: {fileID: 6483314325990947723, guid: 11bddc2b34b8b12428b0c301629a8216, type: 3}
 --- !u!114 &4679878583673250063
 MonoBehaviour:
@@ -294,6 +296,6 @@ MonoBehaviour:
   Preload: 0
   AllowNonRigidbodyDoppler: 0
   Params: []
-  OverrideAttenuation: 0
+  OverrideAttenuation: 1
   OverrideMinDistance: 1
-  OverrideMaxDistance: 20
+  OverrideMaxDistance: 30
