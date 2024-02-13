@@ -14,7 +14,6 @@ public class StampablePaper : TaskObjectiveItem
     {
         if (collision.collider.CompareTag(Item.ITEM_TAG))
         {
-            //collisionPoint = collision.GetContact(0).point;
             collisionPoint = transform.InverseTransformPoint(collision.GetContact(0).point);
         }
     }
@@ -24,14 +23,14 @@ public class StampablePaper : TaskObjectiveItem
         if (stamped)
             return;
 
-        StartCoroutine("InstantiateDecal");
         stamped = true;
+        StartCoroutine("InstantiateDecal");
         base.InteractWithItem(itemTouched);
     }
 
     IEnumerator InstantiateDecal()
     {
-        yield return new WaitForSeconds(0.1f);
+        yield return new WaitForSeconds(0.2f);
         GameObject newDecal = Instantiate(decal, this.transform, false);
         newDecal.transform.localPosition = new Vector3(collisionPoint.x, 0.06f, collisionPoint.z);
     }
