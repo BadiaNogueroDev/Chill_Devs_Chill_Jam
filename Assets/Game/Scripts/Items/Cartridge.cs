@@ -19,9 +19,6 @@ public class Cartridge : Item
 
     public bool CanBeGrabbed()
     {
-        Debug.Log(isInHolder);
-        Debug.Log(TaskManager.Instance.AllTasksDone);
-        
         return !isInHolder && TaskManager.Instance.AllTasksDone;
     }
     
