@@ -10,17 +10,15 @@ public class IngameMenu : MonoBehaviour
     public CanvasFade BlackScreen;
     protected CanvasGroup canvasGroup;
     [SerializeField] private StudioEventEmitter menuSound;
-    
+
     protected void Awake()
     {
         canvasGroup = GetComponent<CanvasGroup>();
     }
 
-    public void ShowMenu()
+    public virtual void ShowMenu()
     {
-        canvasGroup.interactable = true;
-        canvasGroup.blocksRaycasts = true;
-        canvasGroup.alpha = 1f;
+        GetComponent<CanvasFade>().FadeIn();
         Time.timeScale = 0f;
         menuSound?.Play();
     }

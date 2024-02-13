@@ -314,5 +314,5 @@ MonoBehaviour:
   Text: {fileID: 4088620950759229986}
   unhighlightedFont: {fileID: 11400000, guid: 633ee1aea5e83694c8e32ab2251dd7f1, type: 2}
   highlightedFont: {fileID: 11400000, guid: 7a6ebf849becadd4084bff58ad59e4b2, type: 2}
-  selectedFont: {fileID: 0}
+  selectedFont: {fileID: 11400000, guid: 633ee1aea5e83694c8e32ab2251dd7f1, type: 2}
   selected: 0

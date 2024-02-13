@@ -14,7 +14,6 @@ public class MainMenu : MonoBehaviour
     public CanvasFade OptionsCanvas;
     public CanvasFade ControlsCanvas;
     public CanvasFade CreditsCanvas;
-    public float Duration = 0.4f;
 
     public StudioEventEmitter HoverSoundRef;
     public StudioEventEmitter ClickSoundRef;
